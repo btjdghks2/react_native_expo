@@ -1,19 +1,19 @@
-import React from 'react'
-import { View,Button } from 'react-native'
+import React from 'react';
+import {View, Button} from 'react-native'
 
-export const MainScreen = () => {
+export const MainScreen = ({navigation}) => {
   return (
-
     <View>
-        <Button
-        title= "공격분석"
-        onPress={() => navigation.navigate('Attack')}/>
-        <Button
-        title= "수비분석"
-        onPress={() => navigation.navigate('Guard')}/>
-
-
+      <Button title="공격"
+      color="#8B0000"
+      onPress={() => navigation.navigate("Attack")}
+      />
+      <Button title="수비"
+      color="#DAA520"
+      onPress={() => navigation.navigate("Guard")}
+      />
     </View>
+
 
   )
 }

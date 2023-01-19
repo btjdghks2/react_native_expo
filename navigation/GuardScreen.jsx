@@ -1,8 +1,10 @@
 import React from 'react'
-import {View} from 'react-native'
+import {View, Button,Text} from 'react-native'
 
-export const GuardScreen = () => {
+export const GuardScreen = ({navigation}) => {
   return (
-    <View>GuardScreen</View>
+    <View><Text>GuardScreen</Text>
+    <Button title="뒤로가기" onPress={() => navigation.pop()} />
+    </View>
   )
 }

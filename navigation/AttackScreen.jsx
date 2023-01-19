@@ -1,8 +1,12 @@
 import React from 'react'
-import {View} from 'react-native'
+import {View,Button,Text} from 'react-native'
 
-export const AttackScreen = () => {
+export const AttackScreen = ({navigation}) => {
   return (
-    <View>AttackScreen</View>
+    <View>
+      <Text>AttackScreen</Text>
+<Button title="뒤로가기" onPress={() => navigation.pop()} />
+
+    </View>
   )
 }
