@@ -5,9 +5,9 @@ import {StyleSheet,View, Button} from 'react-native'
 
 export const MainScreen = ({navigation}) => {
   return (
-    <View style={{marginTop: 30,height:'100%'}}>
-      <View style={{flex:2}} />
-<View style={{flex:1}} >
+    <View >
+      <View  />
+<View style={{width:'30', height:'40',margin:10}} >
       <Button
       color="#8B0000"
       title="공격"
@@ -15,7 +15,7 @@ export const MainScreen = ({navigation}) => {
       onPress={() => navigation.navigate("Attack")}
       /></View>
 
-      <View style={{flex:3}} >
+      <View style={{width:'30', height:'60',margin:10}} >
       <Button 
       color="#DAA520"
       title="수비"
